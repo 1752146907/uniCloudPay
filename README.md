@@ -38,4 +38,4 @@
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/uni-app/uniCloud/uni-pay-flow-chart.jpg)
 
-[参考：](https://ext.dcloud.net.cn/plugin?id=1835)
+[参考：(https://ext.dcloud.net.cn/plugin?id=1835)]
