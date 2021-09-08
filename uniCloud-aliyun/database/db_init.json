@@ -1,0 +1,28 @@
+// 在本文件中可配置云数据库初始化，数据格式见：https://uniapp.dcloud.io/uniCloud/cf-database?id=db_init
+
+// 编写完毕后对本文件点右键，可按配置规则创建表和添加数据
+
+{
+	"goods": {
+		"data": [{
+			"name": "测试商品1",
+			"price": 1
+		}, {
+			"name": "测试商品2",
+			"price": 1
+		}]
+	},
+	"order": {
+		"index": [{ // 索引
+			"IndexName": "outTradeNo_", // 索引名称
+			"MgoKeySchema": { // 索引规则
+				"MgoIndexKeys": [{
+					"Name": "outTradeNo", // 索引字段
+					"Direction": "1" // 索引方向，1：ASC-升序，-1：DESC-降序，2dsphere：地理位置
+				}],
+				"MgoIsUnique": true // 索引是否唯一
+			}
+		}]
+	},
+	"uni-id-users": {}
+}

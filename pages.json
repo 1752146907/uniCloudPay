@@ -1,0 +1,49 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// #ifdef MP-ALIPAY || MP-WEIXIN
+		{
+			"path": "pages/login-mp/login-mp",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		// #endif
+		// #ifdef APP-PLUS || H5
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		// #endif
+		// #ifndef APP-PLUS || MP-WEIXIN || MP-ALIPAY || H5
+		{
+			"path": "pages/error/error",
+			"style": {
+				"navigationBarTitleText": "错误"
+			}
+		},
+		// #endif
+		{
+			"path": "pages/goods/goods",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		}, {
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "订单"
+			}
+		}
+	    ,{
+            "path" : "pages/error/error",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
